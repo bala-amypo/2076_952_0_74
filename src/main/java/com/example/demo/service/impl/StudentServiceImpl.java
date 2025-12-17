@@ -1,6 +1,7 @@
 package com.example.demo.service.impl;
 import java.util.List;
 import java.util.ArrayList;
+import java.util.Optional;
 import org.springframework.stereotype.Service;
 import com.example.demo.service.StudentService;
 import com.example.demo.entity.Student;
@@ -26,8 +27,8 @@ public List<Student> getAllData(){
 }
 
 @Override
-public Student getOne(Long id){
-    return new Studesr.findById(id);
+public Optional<Student> getOne(Long id){
+    return sr.findById(id);
 }
 
 

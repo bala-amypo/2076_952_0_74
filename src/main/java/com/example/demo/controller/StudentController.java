@@ -3,7 +3,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import com.example.demo.entity.Student;
 import com.example.demo.service.StudentService;
-
+import java.util.Optional;
 import java.util.List;
 import java.util.ArrayList;
 
@@ -21,7 +21,7 @@ public class StudentController{
         return dr.getAllData();
     }
     @GetMapping("/getOne/{id}")
-    public Student get(Long id){
+    public Optional<Student> get(Long id){
         return dr.getOne(id);
     }
 
