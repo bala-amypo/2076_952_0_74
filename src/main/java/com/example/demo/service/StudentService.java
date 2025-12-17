@@ -8,7 +8,7 @@ public interface StudentService{
    public List<Student> getAllData();
    public Optional<Student> getOne(Long id);
    public String delbyid(Long id);
-   public String dAll();
+   public boolean delAll();
    public Optional<Student> update(Long id,Student);
 
 }

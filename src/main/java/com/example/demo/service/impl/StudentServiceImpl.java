@@ -36,6 +36,9 @@ public String delbyid(Long id){
     sr.deleteById(id);
     return "Data deleted succesfully";
 }
-public String 
+@Override
+public void delAll(){
+   sr.deleteAll();
+}
 
 }
