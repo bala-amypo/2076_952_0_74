@@ -24,6 +24,14 @@ public class StudentController{
     public Optional<Student> get(Long id){
         return dr.getOne(id);
     }
+    @DeleteMapping("/delete/{id}")
+    public String delete(Long id){
+        return dr.delbyid(id);
+    }
+    @DeleteMapping("/deleteall")
+    public String dAll(){
+        return dr.delAll();
+    }
 
 
 }

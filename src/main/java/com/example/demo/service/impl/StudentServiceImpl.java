@@ -32,9 +32,10 @@ public Optional<Student> getOne(Long id){
 }
 
 @Override
-public String del(Long id){
+public String delbyid(Long id){
     sr.deleteById(id);
     return "Data deleted succesfully";
 }
+public String 
 
 }
