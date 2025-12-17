@@ -1,11 +1,11 @@
-package com.example.demo.controller;
+// package com.example.demo.controller;
 
 
 
-public class StudentController{
-    @PostMapping("/")
-    Public Student 
+// public class StudentController{
+//     @PostMapping("/")
+//     Public Student 
 
 
-}
+// }
 
