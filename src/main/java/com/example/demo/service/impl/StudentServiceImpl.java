@@ -41,5 +41,9 @@ public String delAll(){
    sr.deleteAll();
    return "All the data have been deleted";
 }
+@Override
+public String update(Long id,Student st){
+    sr.Upda
+}
 
 }

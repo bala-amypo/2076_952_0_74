@@ -9,6 +9,6 @@ public interface StudentService{
    public Optional<Student> getOne(Long id);
    public String delbyid(Long id);
    public String delAll();
-   // public Optional<Student> update(Long id,Student);
+   public String update(Long id,Student st) ;
 
 }

@@ -32,6 +32,10 @@ public class StudentController{
     public String dAll(){
          return dr.delAll();
     }
+    @PutMapping("/putdata/{id}")
+    public String putt(@PathVariable Long id,@RequestBody Student st){
+        return dr.update(id,)
+    }
 
 
 }
