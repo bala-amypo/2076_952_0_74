@@ -1,20 +1,19 @@
 package com.example.demo.controller;
-
-import org.springframework.web.bind.annotation.PostMapping;
-
-import org.springframework.web.bind.annotation.PutMapping;
-
-import org.springframework.web.bind.annotation.PutMapping;
-
-import org.springframework.web.bind.annotation.DeleteMapping;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.*;
+import com.example.demo.entity.Student;
+import com.example.demo.service.StudentService;
 
 
 
 
+@RestController
 public class StudentController{
-    @PostMapping("/post")
+    @Autowired
+    StudentService sr;
+    @PostMapping("/postStudent")
     Public Student post(@RequestBody Student st){
-
+        return sr.postData(st);
     }
 
 
