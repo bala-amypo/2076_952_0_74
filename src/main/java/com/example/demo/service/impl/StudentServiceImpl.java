@@ -25,6 +25,10 @@ public List<Student> getAllData(){
     return new ArrayList<>(sr.findAll());
 }
 
+@Override
+public Student getOne(Long id){
+    return new Studesr.findById(id);
+}
 
 
 }

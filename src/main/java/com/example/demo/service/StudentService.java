@@ -6,5 +6,5 @@ import java.util.ArrayList;
 public interface StudentService{
    public Student postData(Student st);
    public List<Student> getAllData();
-   public 
+   public Student getOne(Long id);
 }

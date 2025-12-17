@@ -20,6 +20,10 @@ public class StudentController{
     public List<Student> get(){
         return dr.getAllData();
     }
+    @GetMapping("/getOne/{id}")
+    public Student get(Long id){
+        return dr.getOne(id);
+    }
 
 
 }
