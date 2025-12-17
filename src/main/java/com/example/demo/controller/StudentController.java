@@ -30,12 +30,7 @@ public class StudentController{
     }
     @DeleteMapping("/deleteall")
     public String dAll(){
-         
-         if(dr.delAll()){
-        return "All data deleted succesfully";
-         }else{
-            return "No data deleted";
-         }
+         return dr.delAll();
     }
 
 

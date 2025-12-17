@@ -39,6 +39,7 @@ public String delbyid(Long id){
 @Override
 public void delAll(){
    sr.deleteAll();
+   re
 }
 
 }
