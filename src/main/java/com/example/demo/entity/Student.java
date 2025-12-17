@@ -1,7 +1,15 @@
 package com.example.demo.entity;
+
+
 import java.time.*;
+import jakarta.persistence.*;
+
+
+
+
 @Entity
 public class Student{
+    @Id
     private Long id;
     private String name;
     private String dept;
