@@ -15,6 +15,10 @@ public class StudentController{
     public Student post(@RequestBody Student st){
         return dr.postData(st);
     }
+    @GetMapping("/getStudent")
+    public List<Student> get(){
+        return dr.getAllData();
+    }
 
 
 }

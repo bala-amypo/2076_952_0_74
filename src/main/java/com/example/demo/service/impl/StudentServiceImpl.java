@@ -17,6 +17,11 @@ public Student postData(Student st){
     return sr.save(st);
 
 }
+@Override
+public List<Student> getAllData(){
+
+    return new ArrayList<>(sr.findAll());
+}
 
 
 
