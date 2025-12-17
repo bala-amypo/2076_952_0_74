@@ -12,7 +12,7 @@ public class StudentController{
     @Autowired
     StudentService sr;
     @PostMapping("/postStudent")
-    Public Student post(@RequestBody Student st){
+    public Student post(@RequestBody Student st){
         return sr.postData(st);
     }
 
