@@ -31,5 +31,10 @@ public Optional<Student> getOne(Long id){
     return sr.findById(id);
 }
 
+@Override
+public String del(Long id){
+    sr.deleteById(id);
+    return "Data deleted succesfully";
+}
 
 }
