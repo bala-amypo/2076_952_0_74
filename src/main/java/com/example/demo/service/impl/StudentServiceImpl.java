@@ -14,7 +14,7 @@ StudentRepository Sr;
 @Override
 public Student postData(Student st){
 
-    return st;
+    return sr.save(st);
 
 }
 
