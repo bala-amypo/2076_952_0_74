@@ -6,9 +6,7 @@ public class Student{
     private String dept;
     private LocalDate dob;
     private float cgpa;
-    public Student(){
-
-    }
+    public Student(){}
      public Student(Long id,String name,String dept,LocalDate dob,float cgpa){
         this.id=id;
         this.name=name;
@@ -16,22 +14,37 @@ public class Student{
         this.dob=dob;
         this.cgpa=cgpa;
     }
-    void setId(Long id){
+   public void setId(Long id){
          this.id=id;
     }
-    void setName(String name){
+    public void setName(String name){
          this.name=name;
     }
-
-    void setDept(String dept){
+    public void setDept(String dept){
          this.dept=dept;
     }
-     void setDob(LocalDate dob){
-        
+    public void setDob(LocalDate dob){
+         this.dob=dob;
     }
-     void setCgpa(float cgpa){
-        
+    public void setCgpa(float cgpa){
+          this.cgpa=cgpa;
     }
+
+    public Long getId(){
+        return id;
+    } 
+      public String getName(){
+        return name;
+    } 
+      public String getDept(){
+        return dept;
+    } 
+      public LocalDate getDob(){
+        return dob;
+    } 
+      public float getCgpa(){
+        return cgpa;
+    } 
 
 
 
