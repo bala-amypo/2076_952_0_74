@@ -43,7 +43,18 @@ public String delAll(){
 }
 @Override
 public String update(Long id,Student st){
-    sr.Upda
+    Optional<Student>dummy=sr.findById(id);
+    if(dummy.id==st.id){
+        sr.delbyid(st.id);
+        sr.save(st);
+        return "Updated succesfully";
+
+    }else{
+
+        return "Enter valid data ";
+
+    }
+    
 }
 
 }
