@@ -10,10 +10,10 @@ import com.example.demo.service.StudentService;
 @RestController
 public class StudentController{
     @Autowired
-    StudentService sr;
+    StudentService dr;
     @PostMapping("/postStudent")
     public Student post(@RequestBody Student st){
-        return sr.postData(st);
+        return dr.postData(st);
     }
 
 

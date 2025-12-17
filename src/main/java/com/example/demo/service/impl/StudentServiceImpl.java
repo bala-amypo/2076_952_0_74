@@ -9,7 +9,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 @Service
 public class StudentServiceImpl implements StudentService{
 @Autowired
-StudentRepository Sr;
+StudentRepository sr;
 
 @Override
 public Student postData(Student st){
